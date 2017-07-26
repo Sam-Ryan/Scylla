@@ -6,7 +6,7 @@ if (message.content.startsWith(prefix + 'help')) {
 	        description: 'Here is a list of all user commands.',
 	        fields: [{
 	                name: 'Urban Dictonary',
-	                value: '.urban (keyword)'
+	                value: '!urban (keyword)'
 	            },
 	            {
 	                name: 'Random Facts',
@@ -18,7 +18,7 @@ if (message.content.startsWith(prefix + 'help')) {
 	            },
 	            {
 	                name: 'Random Movie Quotes',
-	                value: '.movies'
+	                value: '!movies'
 	            },
 	            {
 	                name: 'Random Quotes',
@@ -43,7 +43,7 @@ if (message.content.startsWith(prefix + 'help')) {
 
 	            {
 	                name: 'Google Image Search - Random',
-	                value: '.gi (search term)'
+	                value: '!gi (search term)'
 	            },
 	            {
 	                name: 'Ping Test',
@@ -59,15 +59,15 @@ if (message.content.startsWith(prefix + 'help')) {
 	            },
 	            {
 	                name: 'Its Too Late.',
-	                value: '.itstoolate'
+	                value: '!itstoolate'
 	            },
 	            {
 	                name: 'Never Gonna',
-	                value: '.nevergonna'
+	                value: '!nevergonna'
 	            },
 	            {
 	                name: 'If you Like It',
-	                value: '.ifyoulikeit'
+	                value: '!ifyoulikeit'
 	            },
 
 	        ],
