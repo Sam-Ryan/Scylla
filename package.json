@@ -1,0 +1,28 @@
+{
+  "name": "Scylla",
+  "version": "0.0.1",
+  "description": "Un bot discord développer en nodejs par Ryan",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan",
+  "license": "ISC",
+  "dependencies": {
+    "9gag-scraper": "^1.0.1",
+    "@ffmpeg-installer/ffmpeg": "^1.0.12",
+    "discord.js": "^11.1.0",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "libsodium-wrappers": "^0.5.1",
+    "moment": "^2.18.1",
+    "opusscript": "0.0.3",
+    "random-anime-wallpapers": "^1.1.0",
+    "random-cat": "^1.0.1",
+    "random-fact": "^1.1.0",
+    "random-puppy": "^1.1.0",
+    "random-word": "^2.0.0",
+    "uws": "^0.14.5",
+    "wikifakt": "^1.0.3"
+  }
+}
