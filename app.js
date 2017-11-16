@@ -33,7 +33,7 @@ var jsonObj = {
 
 
 
-
+//Ready
 client.on('ready', () => {
   var servers = client.guilds.array().map(g => g.name).join(',');
   var memberCount = client.users.size;
@@ -60,7 +60,7 @@ client.on('ready', () => {
 
 });
 
-
+//Guild
 client.on("guildcreation" , member => {
 	let guild = member.guild;
 	guild.defaultChannel.send("Bienvenue ${member.user.username} sur ce server ;) ");
@@ -83,7 +83,7 @@ client.on('roleUpdate' , (oRole, nRole) =>{
 });
 
 
-
+//Check if verified message seen
 client.on("message" , message => {
 	const msgc = message.content;
 	console.log("J'ai vu le message")
@@ -691,65 +691,7 @@ let  query = msgc.substr(6);
 });
 
 } else 
-	//TeamAlert
-	if(msgc ===("Team1")){
-		message.channel.sendMessage({
-			embed: {
-				type: 'rich',
-				description: '',
-				fields: [{
-					name: "Welcome to the IPS Official channel. If you are here it is because you have the skills. :white_check_mark: ",
-					value: "Please make sure to add your programming languages below to define roles", 
-					inline: true,
-				}],
-				color: 0xE46525,
-          timestamp: new Date(),
-          footer: {
-            text: 'By Ryan[], TS by Matrixxx',
-			},
-		}
-	});
 
-} else
-	if(msgc ===("Bot-Scylla4")){
-		message.channel.sendMessage({
-        embed: {
-          type: 'rich',
-          description: '',
-          fields: [{
-            name: "Ici vous retrouverez quelques support avec qui nous travaillons :white_check_mark: :part_alternation_mark:  ",
-            value: "You will find our support here :white_check_mark: :part_alternation_mark: ",
-            inline: true
-          }],
-          color: 0xE46525,
-          timestamp: new Date(),
-          footer: {
-            text: 'by Ryan[]',
-        },
-    }
-});
-
-} else
-
-	if(msgc ===("Bot-Scylla7")){
-		message.channel.sendMessage({
-			embed: {
-				type:'rich',
-				description: '',
-				fields: [{
-					name: "Hey What's up, Team are now allowed here! :scales: :tools:  ",
-					value: "You can now create your work team around which you can talk about your ideas and work around your projects in #projets. Enjoy :moneybag:  ",
-					inline: true
-				}],
-			color: 0xE46525,
-          timestamp: new Date(),
-          footer: {
-            text: 'by Ryan[], TS by Matrixxx',
-        },
-			}
-		})
-
-} else
 
 	if(msgc ===(prefix + 'whois')){
 		var whois = require('whois')
@@ -782,7 +724,8 @@ let  query = msgc.substr(6);
 		message.reply(randomName);
 
 } else 
-	
+
+	//Wallpaper
 	if(msgc ===(prefix + 'wallpaper')){
 		const randomAnimeWallpapers = require('random-anime-wallpapers')
 		randomAnimeWallpapers().then(function(images) {
@@ -805,7 +748,8 @@ let  query = msgc.substr(6);
 
 		
 } else
-
+	
+	//9gag joke
 	if(msgc ===(prefix +"9gag")){
 		var gagScraper = require('9gag-scraper')
 		new gagScraper().getRandom(function (error, data) {
@@ -822,6 +766,7 @@ new gagScraper("random").getGags(function (error, data) {
 	
 
 } else 
+
     //Aide
 	if (message.content.startsWith(prefix + 'help')) {
 			message.channel.sendEmbed({
@@ -920,4 +865,4 @@ new gagScraper("random").getGags(function (error, data) {
 
 	app.listen(AuthDetails.port);
 
-client.login
+client.login('yourclientoken');
