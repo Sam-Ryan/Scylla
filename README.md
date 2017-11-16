@@ -1,5 +1,24 @@
 # Scylla
 Scylla is an amazing bot discord writted in nodejs
-Node_modules folder are at https://www.dropbox.com/s/c4owk194fyu1vel/node_modules.zip?dl=0 because of the size of the archive.
 
-New Features will be added soon.
+
+Features:
+
+Chuck Norris Joke
+9gag Joke
+Weather
+Youtube Music
+Random Word 
+Urban Dictionnary
+Random Fact
+Random Quotes
+Random Cat/Dog Images
+Imdb Movie
+Google Lookup
+Wiki Research
+Server Statistics
+Ping
+Warning
+
+
+
