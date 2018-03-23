@@ -21,7 +21,7 @@ con = console.log;
 var aide = "help";
 var prefix = "!";
 var moment = require("moment");
-var mention = "<291698785178877962>"
+var mention = "<YOURBOTID>"
 var scylla = ["Scylla", "The Black Box", "The black box", "The Black box", "scylla", "the black box"];
 const opts = {
   maxResults: 3,
@@ -255,13 +255,7 @@ client.on("message" , message => {
 	} else
 	
 	//Avertissement => liste
-	for (var i = 0; i < liste.length; i++) {
-	if (message.content.includes(liste[i])) {
-		message.delete();
-  	  	message.reply("Attention tu utilises des mots innapropriés sur ce serveur!!! \n 1er Avertisstement");
-  		}
 	
-	 }
 
 	 //Bonjour
 	if (message.content === "Bonjour") {
@@ -865,4 +859,4 @@ new gagScraper("random").getGags(function (error, data) {
 
 	app.listen(AuthDetails.port);
 
-client.login('yourclientoken');
+client.login('YOURTOKENHERE');
