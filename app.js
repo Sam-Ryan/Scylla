@@ -94,7 +94,7 @@ client.on("message" , message => {
 
 	
 	//Musique 
-   music.setVoiceChannel(message.member.voiceChannel);
+   music.setVoiceChannel(message.member.VoiceChannel);
     var array_msg = msgc.split(' ');
             messages.push(message);
             switch (array_msg[0]) {
