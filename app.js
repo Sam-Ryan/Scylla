@@ -5,6 +5,7 @@ const chalk = require('chalk');
 const weather = require("weather-js");
 const Wiki = require("wikijs");
 const express = require("express");
+const NineGag = require('9gag-scraper');
 var app = express();
 var yt = require("./youtube_plugin");
 var allfunction = require("./allfunction.js");
@@ -15,6 +16,7 @@ var rs = new RedisSessions();
 var Music = require("./Music.js");
 var functionhelper = require("./functionhelper.js");
 var ffmpeg = require("ffmpeg");
+var gagScraper = require('9gag-scraper');
 search = require("youtube-search"),
 music = new Music();
 con = console.log;
@@ -94,7 +96,7 @@ client.on("message" , message => {
 
 	
 	//Musique 
-   music.setVoiceChannel(message.member.VoiceChannel);
+ /*  music.setVoiceChannel(message.member.VoiceChannel);
     var array_msg = msgc.split(' ');
             messages.push(message);
             switch (array_msg[0]) {
@@ -166,7 +168,7 @@ client.on("message" , message => {
             music.next();
             break;
         }
-
+*/
  
 		//JSON Chuck
         var functionName = jsonObj[msgc];
@@ -749,18 +751,22 @@ let  query = msgc.substr(6);
 		new gagScraper().getRandom(function (error, data) {
     console.log(data.id); // 9GAG post ID 
     console.log(data.url); // 9GAG post URL
- 	message.channel.send(data.title +  data.image)
+ 	message.channel.send(data)
     
 });
  
 new gagScraper("random").getGags(function (error, data) {
 });
 
-
 	
 
 } else 
 
+	if(msgc ===(prefix + "movies")){
+	const randomIMDB = require('imdbapi');
+	randomIMDB(console.log);
+
+} else
     //Aide
 	if (message.content.startsWith(prefix + 'help')) {
 			message.channel.sendEmbed({
