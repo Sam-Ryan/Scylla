@@ -23,7 +23,7 @@ con = console.log;
 var aide = "help";
 var prefix = "!";
 var moment = require("moment");
-var mention = "<YOURBOTID>"
+var mention = "<YOURBOTMENTION>"
 var scylla = ["Scylla", "The Black Box", "The black box", "The Black box", "scylla", "the black box"];
 const opts = {
   maxResults: 3,

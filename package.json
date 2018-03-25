@@ -20,7 +20,7 @@
     "ffmpeg-binaries": "^3.2.2-3",
     "imdbapi": "^1.0.5",
     "libsodium-wrappers": "^0.5.1",
-    "moment": "^2.18.1",
+    "moment": "^2.21.0",
     "opusscript": "0.0.3",
     "random-anime-wallpapers": "^1.1.0",
     "random-cat": "^1.0.1",
