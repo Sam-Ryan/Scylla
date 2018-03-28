@@ -4,7 +4,7 @@ Scylla is an amazing bot discord writted in nodejs
 You need to install nodejs.
 You can download the Node.js source code or a pre-built installer on https://nodejs.org/en/download/
 
-1)Open terminal at the root of the project. Run npm install discord.js</br>
+1)Open terminal at the root of the project. Run ```npm install discord.js```</br>
 2)You need to install all modules i used for this bot.</br>
 3)Then just run node app.js at the root folder of the project</br>
 4)Enjoy on your discord server</br>
