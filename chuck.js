@@ -26,4 +26,4 @@ if (message.author.bot) return;
 
 
 
-client.login('MjkxNjk4Nzg1MTc4ODc3OTYy.C7BPLQ.H1BynYSd4RetIfqjNLIEFcxUzPU');
+client.login('');
